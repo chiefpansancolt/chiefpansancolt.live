@@ -44,7 +44,7 @@ export default function FullWidthTwoColumn({name, docs, details}) {
             >
               <div className="absolute inset-0 flex">
                 <div className="bg-white w-1/2" />
-                <div className="bg-gray-100 w-1/2" />
+                <div className="bg-gray-50 w-1/2" />
               </div>
               <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
                 <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
@@ -66,7 +66,7 @@ export default function FullWidthTwoColumn({name, docs, details}) {
                     </div>
                   ))}
                 </nav>
-                <div className="bg-gray-100 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                   <div>
                     <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">{details.name}</h3>
                     <p className="space-y-6 pt-4">{details.description}</p>

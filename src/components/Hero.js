@@ -3,7 +3,7 @@ import Twitch from "@/components/Twitch"
 
 export default function Hero() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-100">
       <div className="relative overflow-hidden">
         <div className="relative pb-16">
           <Navigation />
@@ -45,7 +45,7 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div className="mt-10 pb-12 bg-gray-50 sm:pb-16">
+        <div className="mt-10 pb-12 bg-gray-100 sm:pb-16">
           <div className="relative">
             <div className="absolute inset-0 h-1/2 bg-gray-800" />
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
