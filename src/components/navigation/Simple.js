@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Simple({name, items}) {
+export default function Simple({ name, items }) {
   return (
     <Popover className="relative">
       {({ open }) => (
@@ -20,7 +20,10 @@ export default function Simple({name, items}) {
           >
             <span>{name}</span>
             <ChevronDownIcon
-              className={classNames(open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500')}
+              className={classNames(
+                open ? 'text-gray-600' : 'text-gray-400',
+                'ml-2 h-5 w-5 group-hover:text-gray-500'
+              )}
               aria-hidden="true"
             />
           </Popover.Button>

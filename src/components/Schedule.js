@@ -13,11 +13,11 @@ export default function Schedule() {
                   Monday, Wednesday, Friday - (8pm - 12am)
                 </div>
                 <div className="block text-base prose prose-purple">
-                  Stream schedule can change, I could stream more or less but
-                  will try to stick to these days. Follow
-                  {' '}<a href="https://twitter.com/chiefpansancolt">Twitter</a>,
-                  {' '}<a href="https://efuse.gg/u/Chiefpansancolt">eFuse</a>, or
-                  {' '}<a href="https://twitch.tv/chiefpansancolt">Twitch</a> for going live notifications
+                  Stream schedule can change, I could stream more or less but will try to stick to
+                  these days. Follow <a href="https://twitter.com/chiefpansancolt">Twitter</a>,{' '}
+                  <a href="https://efuse.gg/u/Chiefpansancolt">eFuse</a>, or{' '}
+                  <a href="https://twitch.tv/chiefpansancolt">Twitch</a> for going live
+                  notifications
                 </div>
               </div>
             </div>

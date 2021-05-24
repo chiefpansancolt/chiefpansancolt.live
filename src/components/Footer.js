@@ -1,5 +1,5 @@
-import social from "@/data/social"
-import navigations from "@/data/navigation"
+import social from '@/data/social'
+import navigations from '@/data/navigation'
 
 export default function Footer() {
   return (

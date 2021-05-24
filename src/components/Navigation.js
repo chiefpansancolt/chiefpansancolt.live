@@ -34,15 +34,27 @@ export default function Navigation() {
               </div>
               <div className="hidden md:flex-1 md:flex md:items-center md:justify-center">
                 <Popover.Group as="nav" className="flex space-x-10">
-                  {navigations.main.map((item) => (
-                    (item.type === "link"
-                      ? <Link key={item.name} url={item.link} name={item.name} klass="font-medium text-gray-500 hover:text-gray-900"/>
-                      : item.type === "simple"
-                        ? <Simple key={item.name} items={item.sub} name={item.name} />
-                        : item.type === "full-width-two-column"
-                          ? <FullWidthTwoColumn key={item.name} name={item.name} docs={item.sub[0].columns} details={item.sub[1]} />
-                          : "")
-                  ))}
+                  {navigations.main.map((item) =>
+                    item.type === 'link' ? (
+                      <Link
+                        key={item.name}
+                        url={item.link}
+                        name={item.name}
+                        klass="font-medium text-gray-500 hover:text-gray-900"
+                      />
+                    ) : item.type === 'simple' ? (
+                      <Simple key={item.name} items={item.sub} name={item.name} />
+                    ) : item.type === 'full-width-two-column' ? (
+                      <FullWidthTwoColumn
+                        key={item.name}
+                        name={item.name}
+                        docs={item.sub[0].columns}
+                        details={item.sub[1]}
+                      />
+                    ) : (
+                      ''
+                    )
+                  )}
                 </Popover.Group>
               </div>
             </div>
@@ -83,24 +95,42 @@ export default function Navigation() {
                   <div className="mt-6 sm:mt-8">
                     <nav className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                       <div>
-                        {navigations.main.map((item) => (
-                          (item.name === "Documentation" ? <MobileNav key={item.name} docs={item.sub[0].columns}/> : "")
-                        ))}
+                        {navigations.main.map((item) =>
+                          item.name === 'Documentation' ? (
+                            <MobileNav key={item.name} docs={item.sub[0].columns} />
+                          ) : (
+                            ''
+                          )
+                        )}
                       </div>
                     </nav>
                   </div>
                 </div>
                 <div className="py-6 px-5">
                   <div className="grid grid-cols-2 gap-4">
-                    {navigations.main.map((item) => (
-                      (item.name === "Videos"
-                        ? <>
-                            {item.sub.map((link) => (
-                              <Link key={link.name} url={link.link} name={link.name} klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"/>
-                            ))}
-                          </>
-                        : item.name !== "Documentation" && item.name !== "Home" ? <Link key={item.name} url={item.link} name={item.name} klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"/> : "")
-                    ))}
+                    {navigations.main.map((item) =>
+                      item.name === 'Videos' ? (
+                        <>
+                          {item.sub.map((link) => (
+                            <Link
+                              key={link.name}
+                              url={link.link}
+                              name={link.name}
+                              klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                            />
+                          ))}
+                        </>
+                      ) : item.name !== 'Documentation' && item.name !== 'Home' ? (
+                        <Link
+                          key={item.name}
+                          url={item.link}
+                          name={item.name}
+                          klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                        />
+                      ) : (
+                        ''
+                      )
+                    )}
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function FullWidthTwoColumn({name, docs, details}) {
+export default function FullWidthTwoColumn({ name, docs, details }) {
   return (
     <Popover>
       {({ open }) => (
@@ -50,7 +50,9 @@ export default function FullWidthTwoColumn({name, docs, details}) {
                 <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                   {docs.map((item) => (
                     <div key={item.name}>
-                      <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">{item.name}</h3>
+                      <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                        {item.name}
+                      </h3>
                       <ul className="mt-5 space-y-6">
                         {item.links.map((link) => (
                           <li key={link.name} className="flow-root">
@@ -68,12 +70,19 @@ export default function FullWidthTwoColumn({name, docs, details}) {
                 </nav>
                 <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                   <div>
-                    <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">{details.name}</h3>
+                    <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
+                      {details.name}
+                    </h3>
                     <p className="space-y-6 pt-4">{details.description}</p>
                   </div>
                   <div className="text-sm leading-5 font-medium inline-flex rounded-md shadow-sm pt-6">
-                    <a href={details.button.href} target="_blank" rel="noreferrer" className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
-                      <details.button.icon className={`${details.button.iconColor} w-4 h-4 mr-2`}/>
+                    <a
+                      href={details.button.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
+                    >
+                      <details.button.icon className={`${details.button.iconColor} w-4 h-4 mr-2`} />
                       <span>{details.button.label}</span>
                     </a>
                   </div>
