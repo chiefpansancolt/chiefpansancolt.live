@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Twitch from '@/components/Twitch'
+import stats from '@/data/stats'
 
 export default function Hero() {
   return (
@@ -51,36 +52,25 @@ export default function Hero() {
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-4xl mx-auto">
                 <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-5">
-                  <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      Twitter
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-purple-600">124</dd>
-                  </div>
-                  <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      Instagram
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-purple-600">253</dd>
-                  </div>
-                  <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      eFuse
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-purple-600">103</dd>
-                  </div>
-                  <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      YouTube
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-purple-600">54</dd>
-                  </div>
-                  <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      Twitch
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-purple-600">76</dd>
-                  </div>
+                  {stats.map((stat, index) => (
+                    <div
+                      key={stat.name}
+                      className={`flex flex-col border-gray-100 p-6 text-center sm:border-0 ${
+                        index === 0
+                          ? 'border-b sm:border-r'
+                          : index === 4
+                          ? 'border-t sm:border-l'
+                          : 'border-t border-b sm:border-l sm:border-r'
+                      }`}
+                    >
+                      <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                        <a href={stat.href}>{stat.name}</a>
+                      </dt>
+                      <dd className="order-1 text-5xl font-extrabold text-purple-600">
+                        {stat.count}
+                      </dd>
+                    </div>
+                  ))}
                 </dl>
               </div>
             </div>
