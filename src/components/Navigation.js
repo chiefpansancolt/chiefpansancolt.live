@@ -34,7 +34,7 @@ export default function Navigation() {
               </div>
               <div className="hidden md:flex-1 md:flex md:items-center md:justify-center">
                 <Popover.Group as="nav" className="flex space-x-10">
-                  {navigations.map((item) => (
+                  {navigations.main.map((item) => (
                     (item.type === "link"
                       ? <Link key={item.name} url={item.link} name={item.name} klass="font-medium text-gray-500 hover:text-gray-900"/>
                       : item.type === "simple"
@@ -83,7 +83,7 @@ export default function Navigation() {
                   <div className="mt-6 sm:mt-8">
                     <nav className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                       <div>
-                        {navigations.map((item) => (
+                        {navigations.main.map((item) => (
                           (item.name === "Documentation" ? <MobileNav key={item.name} docs={item.sub[0].columns}/> : "")
                         ))}
                       </div>
@@ -92,7 +92,7 @@ export default function Navigation() {
                 </div>
                 <div className="py-6 px-5">
                   <div className="grid grid-cols-2 gap-4">
-                    {navigations.map((item) => (
+                    {navigations.main.map((item) => (
                       (item.name === "Videos"
                         ? <>
                             {item.sub.map((link) => (
