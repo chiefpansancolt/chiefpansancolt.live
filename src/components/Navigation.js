@@ -10,7 +10,7 @@ import navigations from '@/data/navigation'
 
 export default function Navigation() {
   return (
-    <Popover>
+    <Popover className="relative bg-white">
       {({ open }) => (
         <>
           <div className="absolute inset-0 z-30 pointer-events-none" aria-hidden="true" />
@@ -108,19 +108,18 @@ export default function Navigation() {
                 </div>
                 <div className="py-6 px-5">
                   <div className="grid grid-cols-2 gap-4">
+                    {navigations.main[1].sub.map((link) => (
+                      <Link
+                        key={link.name}
+                        url={link.link}
+                        name={link.name}
+                        klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                      />
+                    ))}
                     {navigations.main.map((item) =>
-                      item.name === 'Videos' ? (
-                        <>
-                          {item.sub.map((link) => (
-                            <Link
-                              key={link.name}
-                              url={link.link}
-                              name={link.name}
-                              klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                            />
-                          ))}
-                        </>
-                      ) : item.name !== 'Documentation' && item.name !== 'Home' ? (
+                      item.name !== 'Documentation' &&
+                      item.name !== 'Home' &&
+                      item.name !== 'Videos' ? (
                         <Link
                           key={item.name}
                           url={item.link}

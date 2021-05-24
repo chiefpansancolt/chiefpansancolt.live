@@ -1,7 +1,9 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <Head>
@@ -16,7 +18,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      {router.pathname !== '/' && <Navigation />}
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }

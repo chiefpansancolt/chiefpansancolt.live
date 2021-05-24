@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Hero from '@/components/Hero'
 import Schedule from '@/components/Schedule'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
         <Hero />
         <Schedule />
         <Contact />
-        <Footer />
       </main>
     </div>
   )
