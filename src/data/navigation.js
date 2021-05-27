@@ -27,7 +27,7 @@ const navigations = {
     },
     {
       name: 'Blog',
-      link: '/posts',
+      link: 'https://blog.chiefpansancolt.live',
       type: 'link',
       sub: [],
     },
@@ -115,7 +115,7 @@ const navigations = {
     },
     {
       name: 'Blog',
-      href: '/posts',
+      href: 'https://blog.chiefpansancolt.live',
     },
     {
       name: 'Pop! Collection',
