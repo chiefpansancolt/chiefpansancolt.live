@@ -1,7 +1,11 @@
-export default function Link({ url, name, klass }) {
+import Link from 'next/link'
+
+export default function aLink({ url, name, klass }) {
   return (
-    <a href={url} className={klass}>
-      {name}
-    </a>
+    <Link href={url}>
+      <a className={klass}>
+        {name}
+      </a>
+    </Link>
   )
 }
