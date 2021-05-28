@@ -1,17 +1,17 @@
 const popCategories = [
-  { name: 'Marvel', image: 'marvel.png', selected: false},
-  { name: 'Game of Thrones', image: 'game-of-thrones.png', selected: false},
-  { name: 'Harry Potter', image: 'harry-potter.png', selected: false},
-  { name: 'Star Wars', image: 'star-wars.png', selected: false},
-  { name: 'Disney', image: 'disney.png', selected: false},
-  { name: 'Fortnite', image: 'fortnite.jpeg', selected: false},
-  { name: 'Pokemon', image: 'pokemon.png', selected: false},
-  { name: 'Jurassic Park', image: 'jurassic-park.png', selected: false},
-  { name: 'Borderlands', image: 'boarderlands.png', selected: false},
-  { name: 'Stanger Things', image: 'stranger-things.png', selected: false},
-  { name: 'DC', image: 'dc.png', selected: false},
-  { name: 'Kingdom Hearts', image: 'kingdom-hearts.png', selected: false},
-  { name: 'Fast & Furious', image: 'fast-and-furious.png', selected: false}
+  { name: 'Marvel', image: 'marvel.png' },
+  { name: 'Game of Thrones', image: 'game-of-thrones.png' },
+  { name: 'Harry Potter', image: 'harry-potter.png' },
+  { name: 'Star Wars', image: 'star-wars.png' },
+  { name: 'Disney', image: 'disney.png' },
+  { name: 'Fortnite', image: 'fortnite.jpeg' },
+  { name: 'Pokemon', image: 'pokemon.png' },
+  { name: 'Jurassic Park', image: 'jurassic-park.png' },
+  { name: 'Borderlands', image: 'boarderlands.png' },
+  { name: 'Stanger Things', image: 'stranger-things.png' },
+  { name: 'DC', image: 'dc.png' },
+  { name: 'Kingdom Hearts', image: 'kingdom-hearts.png' },
+  { name: 'Fast & Furious', image: 'fast-and-furious.png' }
 ]
 
 export default popCategories

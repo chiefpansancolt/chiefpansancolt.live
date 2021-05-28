@@ -1,4 +1,4 @@
-const pops = [
+const myPops = [
   {
     name: 'BB-8',
     number: 314,
@@ -31,4 +31,4 @@ const pops = [
   }
 ]
 
-export default pops
+export default myPops
