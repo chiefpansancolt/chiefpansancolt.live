@@ -15,8 +15,9 @@ function useCategorySorter(availablePops) {
   console.log('running')
   let [pops, setPops] = useState(availablePops)
   let [groups, setGroups] = useState([])
-
-  const runFilter = useCallback(() => {
+  const addCategory = useCallback((name) => {
+    setGroups(groups.push(name))
+    console.log(groups)
     if(groups.length === 0) {
       setPops(_.orderBy(pops, ['group', 'number']))
     } else {
@@ -26,17 +27,28 @@ function useCategorySorter(availablePops) {
     }
   }, [groups, pops])
 
-  const addCategory = useCallback((name) => {
-    setGroups((groups) => [...groups, name])
-  }, [])
-
   const removeCategory = useCallback((name) => {
     setGroups((groups) => groups.filter(function(g) {return g !== name }))
-  }, [])
+    console.log(groups)
+    if(groups.length === 0) {
+      setPops(_.orderBy(pops, ['group', 'number']))
+    } else {
+      setPops(_.filter(pops, function(o) {
+        return groups.includes(o.group)
+      }))
+    }
+  }, [groups, pops])
 
-  useEffect(() => {
-    runFilter()
-  }, [runFilter])
+  useCallback(() => {
+    console.log(groups)
+    if(groups.length === 0) {
+      setPops(_.orderBy(pops, ['group', 'number']))
+    } else {
+      setPops(_.filter(pops, function(o) {
+        return groups.includes(o.group)
+      }))
+    }
+  }, [groups, pops])
 
   return { pops, addCategory, removeCategory }
 }
