@@ -51,7 +51,7 @@ export default function Hero() {
             <div className="absolute inset-0 h-1/2 bg-gray-800" />
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-4xl mx-auto">
-                <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-5">
+                <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-6">
                   {stats.map((stat, index) => (
                     <div
                       key={stat.name}
