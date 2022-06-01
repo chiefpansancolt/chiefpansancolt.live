@@ -85,12 +85,12 @@ const navigations = {
         },
       ],
     },
-    {
-      name: 'Pop! Collection',
-      link: '/pops',
-      type: 'link',
-      sub: [],
-    },
+    // {
+    //   name: 'Pop! Collection',
+    //   link: '/pops',
+    //   type: 'link',
+    //   sub: [],
+    // },
     {
       name: 'Merch',
       link: 'https://merch.streamelements.com/chiefpansancolt',
@@ -117,10 +117,10 @@ const navigations = {
       name: 'Blog',
       href: 'https://blog.chiefpansancolt.live',
     },
-    {
-      name: 'Pop! Collection',
-      href: '/pops',
-    },
+    // {
+    //   name: 'Pop! Collection',
+    //   href: '/pops',
+    // },
     {
       name: 'Merch',
       href: 'https://merch.streamelements.com/chiefpansancolt',
