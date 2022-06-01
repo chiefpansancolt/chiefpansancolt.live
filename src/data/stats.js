@@ -7,22 +7,27 @@ const stats = [
   {
     name: 'Instagram',
     href: 'https://instagram.com/chiefpansancolt',
-    count: 253,
+    count: 3,
   },
   {
     name: 'eFuse',
-    href: 'https://efuse.com/u/chiefpansancolt',
-    count: 103,
+    href: 'https://efuse.gg/u/chiefpansancolt',
+    count: 155,
   },
   {
-    name: 'YouTube',
+    name: 'YouTube (Gaming)',
     href: 'https://youtube.com/channel/UCDiSj1nIsOnMHo3IASiN-3w',
-    count: 54,
+    count: 92,
+  },
+  {
+    name: 'YouTube (Shorts)',
+    href: 'https://www.youtube.com/channel/UCqHORCP5Eq7SpsyLKE-V2Zg',
+    count: 7,
   },
   {
     name: 'Twitch',
     href: 'https://twitch.tv/chiefpansancolt',
-    count: 76,
+    count: 82,
   },
 ]
 
