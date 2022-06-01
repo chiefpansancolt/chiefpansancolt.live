@@ -1,9 +1,5 @@
 [build]
-  command = "yarn build"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  publish = ".next"
 
 [context.production.environment]
-  NEXT_SERVERLESS = "true"
   NODE_ENV = "production"

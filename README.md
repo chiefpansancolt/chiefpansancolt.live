@@ -1,11 +1,29 @@
-# Next.js Tailwind Serverless Example
+<h1 align="center">
+  <a href="https://chiefpansancolt.live" target="_blank">chiefpansancolt.live</a>
+</h1>
 
-## How to use
+[![Netlify Status](https://api.netlify.com/api/v1/badges/09afff0f-5797-4bc8-9ce4-d7a5eb48af4c/deploy-status)](https://app.netlify.com/sites/chiefpansancolt/deploys)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+> My website, created with Next.js, TailwindCSS, and TailwindUI
 
-```bash
-npx create-next-app tailwind-serverless-app -e "https://github.com/chiefpansancolt/nextjs-tailwind-starter-template/tree/main/templates/tailwind-serverless"
-# or
-yarn create next-app tailwind-serverless-app -e "https://github.com/chiefpansancolt/nextjs-tailwind-starter-template/tree/main/templates/tailwind-serverless"
-```
+## Prerequisites
+
+### JavaScript
+
+<p>
+  <img src="https://img.shields.io/badge/node-16.x.x-blue.svg" />
+  <img src="https://img.shields.io/badge/yarn-1.22.x-blue.svg" />
+</p>
+
+## Author
+
+👤 **Christopher Pezza**
+
+* Website: https://chrispezza.me
+* Twitter: [@chiefpansancolt](https://twitter.com/chiefpansancolt)
+* Github: [@chiefpansancolt](https://github.com/chiefpansancolt)
+* LinkedIn: [pezzachristopher](https://linkedin.com/in/pezzachristopher)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!

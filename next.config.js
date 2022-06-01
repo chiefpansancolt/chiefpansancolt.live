@@ -1,6 +1,7 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
-  future: {
-    webpack5: true,
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-  target: 'serverless',
 }
