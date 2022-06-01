@@ -10,7 +10,7 @@ export default function Schedule() {
             <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
               <div className="col-span-1">
                 <div className="block text-lg font-bold">
-                  Monday, Wednesday, Friday - (8pm - 12am)
+                  Tuesday, Thursday, Saturday - (8pm - 12am)
                 </div>
                 <div className="block text-base prose prose-purple">
                   Stream schedule can change, I could stream more or less but will try to stick to
