@@ -5,8 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier './**/*.{css,js,json,yml}' -c",
-    "prettier:fix": "prettier './**/*.{css,js,json,yml}' --write",
+    "format": "prettier './**/*.{css,js,json,yml}' --list-different",
+    "format:fix": "prettier './**/*.{css,js,json,yml}' --write",
     "lint": "next lint"
   },
   "dependencies": {
