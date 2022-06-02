@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import social from '@/data/social'
 import navigations from '@/data/navigation'
 

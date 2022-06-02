@@ -1,4 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
+/* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'

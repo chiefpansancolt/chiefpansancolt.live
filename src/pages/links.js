@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import links from '@/data/links'
 import { ExternalLinkIcon } from '@heroicons/react/solid'
 import PageHeading from '@/components/PageHeading'

@@ -39,10 +39,10 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold text-purple-600 sm:text-4xl">
-              Chief's Social Outreach
+              Chief&apos;s Social Outreach
             </h2>
             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-              Here are some stats on Chief's following on most popular networks.
+              Here are some stats on Chief&apos;s following on most popular networks.
             </p>
           </div>
         </div>
