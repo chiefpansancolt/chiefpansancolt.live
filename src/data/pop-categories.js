@@ -11,7 +11,7 @@ const popCategories = [
   { name: 'Stanger Things', image: 'stranger-things.png' },
   { name: 'DC', image: 'dc.png' },
   { name: 'Kingdom Hearts', image: 'kingdom-hearts.png' },
-  { name: 'Fast & Furious', image: 'fast-and-furious.png' }
+  { name: 'Fast & Furious', image: 'fast-and-furious.png' },
 ]
 
 export default popCategories

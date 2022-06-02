@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import { createContext, useCallback, useEffect, useState} from 'react'
+import { createContext, useCallback, useEffect, useState } from 'react'
 import PageHeading from '@/components/PageHeading'
 import TwoColumn from '@/components/TwoColumn'
 import MainColumn from '@/components/MainColumn'
@@ -15,38 +15,54 @@ function useCategorySorter(availablePops) {
   console.log('running')
   let [pops, setPops] = useState(availablePops)
   let [groups, setGroups] = useState([])
-  const addCategory = useCallback((name) => {
-    setGroups(groups.push(name))
-    console.log(groups)
-    if(groups.length === 0) {
-      setPops(_.orderBy(pops, ['group', 'number']))
-    } else {
-      setPops(_.filter(pops, function(o) {
-        return groups.includes(o.group)
-      }))
-    }
-  }, [groups, pops])
+  const addCategory = useCallback(
+    (name) => {
+      setGroups(groups.push(name))
+      console.log(groups)
+      if (groups.length === 0) {
+        setPops(_.orderBy(pops, ['group', 'number']))
+      } else {
+        setPops(
+          _.filter(pops, function (o) {
+            return groups.includes(o.group)
+          })
+        )
+      }
+    },
+    [groups, pops]
+  )
 
-  const removeCategory = useCallback((name) => {
-    setGroups((groups) => groups.filter(function(g) {return g !== name }))
-    console.log(groups)
-    if(groups.length === 0) {
-      setPops(_.orderBy(pops, ['group', 'number']))
-    } else {
-      setPops(_.filter(pops, function(o) {
-        return groups.includes(o.group)
-      }))
-    }
-  }, [groups, pops])
+  const removeCategory = useCallback(
+    (name) => {
+      setGroups((groups) =>
+        groups.filter(function (g) {
+          return g !== name
+        })
+      )
+      console.log(groups)
+      if (groups.length === 0) {
+        setPops(_.orderBy(pops, ['group', 'number']))
+      } else {
+        setPops(
+          _.filter(pops, function (o) {
+            return groups.includes(o.group)
+          })
+        )
+      }
+    },
+    [groups, pops]
+  )
 
   useCallback(() => {
     console.log(groups)
-    if(groups.length === 0) {
+    if (groups.length === 0) {
       setPops(_.orderBy(pops, ['group', 'number']))
     } else {
-      setPops(_.filter(pops, function(o) {
-        return groups.includes(o.group)
-      }))
+      setPops(
+        _.filter(pops, function (o) {
+          return groups.includes(o.group)
+        })
+      )
     }
   }, [groups, pops])
 

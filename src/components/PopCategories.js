@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */ 
+/* eslint-disable @next/next/no-img-element */
 import { groupCount } from '@/hooks/groupCount'
 import CategoryButton from './CategoryButton'
 
