@@ -9,5 +9,4 @@ module.exports = {
   quoteProps: 'as-needed',
   jsxSingleQuote: false,
   bracketSpacing: true,
-  jsxBracketSameLine: false,
 }
