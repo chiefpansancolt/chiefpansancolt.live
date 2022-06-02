@@ -19,10 +19,10 @@
 
 👤 **Christopher Pezza**
 
-* Website: https://chrispezza.me
-* Twitter: [@chiefpansancolt](https://twitter.com/chiefpansancolt)
-* Github: [@chiefpansancolt](https://github.com/chiefpansancolt)
-* LinkedIn: [pezzachristopher](https://linkedin.com/in/pezzachristopher)
+- Website: https://chrispezza.me
+- Twitter: [@chiefpansancolt](https://twitter.com/chiefpansancolt)
+- Github: [@chiefpansancolt](https://github.com/chiefpansancolt)
+- LinkedIn: [pezzachristopher](https://linkedin.com/in/pezzachristopher)
 
 ## Show your support
 
