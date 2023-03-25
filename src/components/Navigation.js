@@ -1,142 +1,95 @@
 /* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages */
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { useState } from 'react'
+import { Dialog } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Simple from '@/components/navigation/Simple'
-import FullWidthTwoColumn from '@/components/navigation/FullWidthTwoColumn'
 import Link from '@/components/navigation/Link'
-import MobileNav from '@/components/navigation/MobileNav'
 import navigations from '@/data/navigation'
 
 export default function Navigation() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
-    <Popover className="relative bg-white">
-      {({ open }) => (
-        <>
-          <div className="absolute inset-0 z-30 pointer-events-none" aria-hidden="true" />
-          <div className="relative z-20 shadow">
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
-              <div>
-                <a href="/" className="flex">
-                  <span className="sr-only">Chiefpansancolt</span>
-                  <img
-                    className="h-8 w-auto sm:h-10"
-                    src="/img/logo/Black_Logo.png"
-                    alt="Chiefpansancolt Logo"
-                  />
-                </a>
-              </div>
-              <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
-                  <span className="sr-only">Open menu</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
-                </Popover.Button>
-              </div>
-              <div className="hidden md:flex-1 md:flex md:items-center md:justify-center">
-                <Popover.Group as="nav" className="flex space-x-10">
-                  {navigations.main.map((item) =>
-                    item.type === 'link' ? (
-                      <Link
-                        key={item.name}
-                        url={item.link}
-                        name={item.name}
-                        klass="font-medium text-gray-500 hover:text-gray-900"
-                      />
-                    ) : item.type === 'simple' ? (
-                      <Simple key={item.name} items={item.sub} name={item.name} />
-                    ) : item.type === 'full-width-two-column' ? (
-                      <FullWidthTwoColumn
-                        key={item.name}
-                        name={item.name}
-                        docs={item.sub[0].columns}
-                        details={item.sub[1]}
-                      />
-                    ) : (
-                      ''
-                    )
-                  )}
-                </Popover.Group>
+    <header>
+      <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div className="flex lg:flex-1">
+          <a href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">Chiefpansancolt</span>
+            <img
+              className="h-8 w-auto sm:h-10"
+              src="/img/logo/Black_Logo.png"
+              alt="Chiefpansancolt Logo"
+            />
+          </a>
+        </div>
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+          </button>
+        </div>
+        <div className="hidden lg:flex lg:gap-x-12">
+          {navigations.main.map((item) => 
+            item.type === 'link' ? (
+              <Link
+                key={item.name}
+                url={item.link}
+                name={item.name}
+                klass="text-sm font-semibold leading-6 text-gray-500 hover:text-gray-900"
+              />
+            ) : item.type === 'simple' ? (
+              <Simple key={item.name} items={item.sub} name={item.name} />
+            ) : (
+              ''
+            )
+          )}
+        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          
+        </div>
+      </nav>
+      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <div className="fixed inset-0 z-50" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <div className="flex items-center justify-between">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Chiefpansancolt</span>
+              <img
+                className="h-8 w-auto sm:h-10"
+                src="/img/logo/Logo_White.png"
+                alt="Chiefpansancolt Logo"
+              />
+            </a>
+            <button
+              type="button"
+              className="-m-2.5 rounded-md p-2.5 text-gray-400"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <span className="sr-only">Close menu</span>
+              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
+          <div className="mt-6 flow-root">
+            <div className="-my-6 divide-y divide-gray-500/25">
+              <div className="space-y-2 py-6">
+                {navigations.main.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.link}
+                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                  >
+                    {item.name}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
-
-          <Transition
-            show={open}
-            as={Fragment}
-            enter="duration-200 ease-out"
-            enterFrom="opacity-0 scale-95"
-            enterTo="opacity-100 scale-100"
-            leave="duration-100 ease-in"
-            leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
-          >
-            <Popover.Panel
-              focus
-              static
-              className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-            >
-              <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-                <div className="pt-5 pb-6 px-5 sm:pb-8">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <img
-                        className="h-8 w-auto"
-                        src="/img/logo/Black_Logo.png"
-                        alt="Chiefpansancolt Logo"
-                      />
-                    </div>
-                    <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500">
-                        <span className="sr-only">Close menu</span>
-                        <XIcon className="h-6 w-6" aria-hidden="true" />
-                      </Popover.Button>
-                    </div>
-                  </div>
-                  <div className="mt-6 sm:mt-8">
-                    <nav className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                      <div>
-                        {navigations.main.map((item) =>
-                          item.name === 'Documentation' ? (
-                            <MobileNav key={item.name} docs={item.sub[0].columns} />
-                          ) : (
-                            ''
-                          )
-                        )}
-                      </div>
-                    </nav>
-                  </div>
-                </div>
-                <div className="py-6 px-5">
-                  <div className="grid grid-cols-2 gap-4">
-                    {navigations.main[1].sub.map((link) => (
-                      <Link
-                        key={link.name}
-                        url={link.link}
-                        name={link.name}
-                        klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                      />
-                    ))}
-                    {navigations.main.map((item) =>
-                      item.name !== 'Documentation' &&
-                      item.name !== 'Home' &&
-                      item.name !== 'Videos' ? (
-                        <Link
-                          key={item.name}
-                          url={item.link}
-                          name={item.name}
-                          klass="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
-                        />
-                      ) : (
-                        ''
-                      )
-                    )}
-                  </div>
-                </div>
-              </div>
-            </Popover.Panel>
-          </Transition>
-        </>
-      )}
-    </Popover>
+        </Dialog.Panel>
+      </Dialog>
+    </header>
   )
 }
