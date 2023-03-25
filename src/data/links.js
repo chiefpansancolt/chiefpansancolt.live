@@ -47,14 +47,6 @@ const links = [
         ),
       },
       {
-        name: 'eFuse',
-        handle: '@Chiefpansancolt',
-        color: 'bg-black',
-        href: 'https://efuse.gg/u/chiefpansancolt',
-        img: 'https://cdn.efuse.gg/uploads/static/global/efuseLogo.png',
-        icon: (props) => <></>,
-      },
-      {
         name: 'TikTok',
         handle: '@Chiefpansancolt',
         color: 'bg-black',
