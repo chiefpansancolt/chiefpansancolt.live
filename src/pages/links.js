@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import links from '@/data/links'
-import { ExternalLinkIcon } from '@heroicons/react/solid'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import PageHeading from '@/components/PageHeading'
 
 function classNames(...classes) {
@@ -54,7 +54,7 @@ export default function Links() {
                           className="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
                         >
                           <span className="sr-only">Open options</span>
-                          <ExternalLinkIcon className="w-5 h-5" aria-hidden="true" />
+                          <ArrowTopRightOnSquareIcon className="w-5 h-5" aria-hidden="true" />
                         </a>
                       </div>
                     </div>
