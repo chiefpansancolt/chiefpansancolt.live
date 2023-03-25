@@ -2,7 +2,9 @@
   <a href="https://chiefpansancolt.live" target="_blank">chiefpansancolt.live</a>
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/09afff0f-5797-4bc8-9ce4-d7a5eb48af4c/deploy-status)](https://app.netlify.com/sites/chiefpansancolt/deploys)
+[![GitHub Workflow Deploy Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chiefpansancolt.live/deploy.yml?label=Deploy&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/deploy.yml)
+[![GitHub Workflow Build Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chiefpansancolt.live/build.yml?label=Build&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/build.yml)
+[![GitHub Workflow Lint Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chiefpansancolt.live/lints.yml?label=Lints&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/lints.yml)
 
 > My website, created with Next.js, TailwindCSS, and TailwindUI
 
@@ -11,7 +13,7 @@
 ### JavaScript
 
 <p>
-  <img src="https://img.shields.io/badge/node-16.x.x-blue.svg" />
+  <img src="https://img.shields.io/badge/node-18.x.x-blue.svg" />
   <img src="https://img.shields.io/badge/yarn-1.22.x-blue.svg" />
 </p>
 
