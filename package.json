@@ -10,20 +10,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "latest",
-    "@heroicons/react": "latest",
-    "@tailwindcss/aspect-ratio": "latest",
-    "@tailwindcss/forms": "latest",
-    "@tailwindcss/line-clamp": "latest",
-    "@tailwindcss/typography": "latest",
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.16",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.7",
     "lodash": "^4.17.21",
-    "next": "latest",
+    "next": "^13.2.4",
     "postcss": "^8.4.14",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-html-parser": "^2.0.2",
-    "tailwindcss": "latest"
+    "react-twitch-embed": "^3.0.1",
+    "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
     "eslint": "^8.16.0",
