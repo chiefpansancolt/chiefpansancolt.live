@@ -28,7 +28,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-200">
-          &copy; 2020 Chiefpansancolt, All rights reserved.
+          &copy; 2023 Chiefpansancolt, All rights reserved.
         </p>
       </div>
     </footer>
