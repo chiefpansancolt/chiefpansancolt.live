@@ -33,7 +33,7 @@ export default function Navigation() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigations.main.map((item) => 
+          {navigations.main.map((item) =>
             item.type === 'link' ? (
               <Link
                 key={item.name}
@@ -48,9 +48,7 @@ export default function Navigation() {
             )
           )}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          
-        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />

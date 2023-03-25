@@ -14,8 +14,8 @@ export default function Schedule() {
                 </div>
                 <div className="block text-base prose prose-purple">
                   Stream schedule can change, I could stream more or less but will try to stick to
-                  these days. Follow <a href="https://twitter.com/chiefpansancolt">Twitter</a>,{' '}
-                  or{' '} <a href="https://twitch.tv/chiefpansancolt">Twitch</a> for going live
+                  these days. Follow <a href="https://twitter.com/chiefpansancolt">Twitter</a> or{' '}
+                  <a href="https://twitch.tv/chiefpansancolt">Twitch</a> for going live
                   notifications
                 </div>
               </div>
