@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import social from '@/data/social'
-import navigations from '@/data/navigation'
+import navigations from "@/data/navigation"
+import social from "@/data/social"
 
 export default function Footer() {
   return (
     <footer className="bg-gray-800">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
         <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
           {navigations.footer.map((item) => (
             <div key={item.name} className="px-5 py-2">

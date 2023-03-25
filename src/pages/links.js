@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import links from '@/data/links'
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
-import PageHeading from '@/components/PageHeading'
+import PageHeading from "@/components/PageHeading"
+import links from "@/data/links"
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid"
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ")
 }
 
 export default function Links() {
@@ -15,33 +15,33 @@ export default function Links() {
         heading="External Links"
         subHeading="Check out all the different links to other sites that chief is active on for various items on the internet."
       />
-      <div className="max-w-7xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
         <div>
           {links.map((group) => (
             <div key={group.name} className="pt-6">
-              <h2 className="text-gray-500 text-base font-medium uppercase tracking-wide">
+              <h2 className="text-base font-medium uppercase tracking-wide text-gray-500">
                 {group.name}
               </h2>
-              <ul className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <ul className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
                 {group.links.map((link) => (
-                  <li key={link.name} className="col-span-1 flex shadow-sm rounded-md">
+                  <li key={link.name} className="col-span-1 flex rounded-md shadow-sm">
                     <div
                       className={classNames(
                         link.color,
-                        'flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md'
+                        "flex w-16 flex-shrink-0 items-center justify-center rounded-l-md text-sm font-medium text-white"
                       )}
                     >
-                      {link.img !== '' ? (
+                      {link.img !== "" ? (
                         <img src={link.img} alt="eFuse Logo" />
                       ) : (
                         <link.icon className="h-8 w-8" />
                       )}
                     </div>
-                    <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
-                      <div className="flex-1 px-4 py-2 text-sm truncate">
+                    <div className="flex flex-1 items-center justify-between truncate rounded-r-md border-t border-r border-b border-gray-200 bg-white">
+                      <div className="flex-1 truncate px-4 py-2 text-sm">
                         <a
                           href={link.href}
-                          className="text-gray-900 font-medium hover:text-gray-600"
+                          className="font-medium text-gray-900 hover:text-gray-600"
                         >
                           {link.name}
                         </a>
@@ -51,10 +51,10 @@ export default function Links() {
                         <a
                           href={link.href}
                           target="blank"
-                          className="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                          className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white bg-transparent text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
                         >
                           <span className="sr-only">Open options</span>
-                          <ArrowTopRightOnSquareIcon className="w-5 h-5" aria-hidden="true" />
+                          <ArrowTopRightOnSquareIcon className="h-5 w-5" aria-hidden="true" />
                         </a>
                       </div>
                     </div>

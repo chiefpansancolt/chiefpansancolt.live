@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages */
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Simple from '@/components/navigation/Simple'
-import Link from '@/components/navigation/Link'
-import navigations from '@/data/navigation'
+import Link from "@/components/navigation/Link"
+import Simple from "@/components/navigation/Simple"
+import navigations from "@/data/navigation"
+import { Dialog } from "@headlessui/react"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+import { useState } from "react"
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -34,17 +34,17 @@ export default function Navigation() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigations.main.map((item) =>
-            item.type === 'link' ? (
+            item.type === "link" ? (
               <Link
                 key={item.name}
                 url={item.link}
                 name={item.name}
                 klass="text-sm font-semibold leading-6 text-gray-500 hover:text-gray-900"
               />
-            ) : item.type === 'simple' ? (
+            ) : item.type === "simple" ? (
               <Simple key={item.name} items={item.sub} name={item.name} />
             ) : (
-              ''
+              ""
             )
           )}
         </div>
