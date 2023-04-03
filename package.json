@@ -25,7 +25,7 @@
     "react-dom": "^18.2.0",
     "react-html-parser": "^2.0.2",
     "react-twitch-embed": "^3.0.1",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
