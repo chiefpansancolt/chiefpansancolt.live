@@ -12,26 +12,26 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
-    "@heroicons/react": "^2.0.16",
+    "@heroicons/react": "^2.0.17",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.7",
     "lodash": "^4.17.21",
-    "next": "^13.2.4",
+    "next": "^13.3.0",
     "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-html-parser": "^2.0.2",
     "react-twitch-embed": "^3.0.1",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "eslint": "^8.16.0",
-    "eslint-config-next": "^13.2.4",
+    "eslint": "^8.38.0",
+    "eslint-config-next": "^13.3.0",
     "prettier": "^2.8.7",
-    "prettier-plugin-tailwindcss": "^0.2.5"
+    "prettier-plugin-tailwindcss": "^0.2.7"
   }
 }
