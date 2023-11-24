@@ -123,7 +123,7 @@ const links = [
     links: [
       {
         name: 'Discord',
-        handle: 'chiefpansancolt#4352',
+        handle: 'chiefpansancolt',
         color: 'bg-[#5865F2]',
         href: 'https://discord.gg/fzXW3rW',
         img: '',
