@@ -1,7 +1,7 @@
 export default function PageHeading({ title, heading, subHeading }) {
   return (
     <div className="mx-auto w-full max-w-7xl">
-      <div className="py-16 px-4 sm:px-6 lg:px-8">
+      <div className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold uppercase tracking-wide text-purple-600">
             {title}

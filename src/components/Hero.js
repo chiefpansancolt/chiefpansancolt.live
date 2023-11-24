@@ -1,13 +1,13 @@
-import Navigation from "@/components/Navigation"
-import Twitch from "@/components/Twitch"
-import stats from "@/data/stats"
+import Navigation from '@/components/Navigation'
+import Twitch from '@/components/Twitch'
+import stats from '@/data/stats'
 
 export default function Hero() {
   return (
     <div className="bg-gray-100">
       <div className="relative overflow-hidden">
         <div className="relative pb-16">
-          <Navigation active="true"/>
+          <Navigation active="true" />
 
           <div className="mx-auto mt-16 max-w-7xl px-4 sm:px-6">
             <div className="text-center">
@@ -57,10 +57,10 @@ export default function Hero() {
                       key={stat.name}
                       className={`flex flex-col border-gray-100 p-6 text-center sm:border-0 ${
                         index === 0
-                          ? "border-b sm:border-r"
+                          ? 'border-b sm:border-r'
                           : index === 4
-                          ? "border-t sm:border-l"
-                          : "border-t border-b sm:border-l sm:border-r"
+                            ? 'border-t sm:border-l'
+                            : 'border-b border-t sm:border-l sm:border-r'
                       }`}
                     >
                       <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">

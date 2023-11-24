@@ -1,14 +1,15 @@
+import Footer from '@/components/Footer'
+import Navigation from '@/components/Navigation'
+import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
-import Footer from "@/components/Footer"
-import Navigation from "@/components/Navigation"
-import "@/styles/globals.css"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Chiefpansancolt: A Gamer, Father, Husband, and Developer',
-  description: 'Chiefpansancolt is a avid gamer, devoted father and husband, a developer changing the world one line of code at a time!',
-  keywords: 'Chiefpansancolt, Chief, Streamer, Developer, Gamer'
+  description:
+    'Chiefpansancolt is a avid gamer, devoted father and husband, a developer changing the world one line of code at a time!',
+  keywords: 'Chiefpansancolt, Chief, Streamer, Developer, Gamer',
 }
 
 export default function RootLayout({ children }) {
@@ -21,19 +22,19 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest" />
         <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
           `,
-            }}
-          />
+          }}
+        />
       </head>
       <body className={inter.className}>
         <Navigation />

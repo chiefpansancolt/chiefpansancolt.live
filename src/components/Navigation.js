@@ -1,21 +1,21 @@
 'use client'
 
 /* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages */
-import Link from "@/components/navigation/Link"
-import Simple from "@/components/navigation/Simple"
-import navigations from "@/data/navigation"
-import { Dialog } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import { useState } from "react"
+import Link from '@/components/navigation/Link'
+import Simple from '@/components/navigation/Simple'
+import navigations from '@/data/navigation'
+import { Dialog } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 export default function Navigation({ active }) {
   const pathname = usePathname()
 
-  if (pathname !== '/' || active === "true") {
-    return <Nav />;
+  if (pathname !== '/' || active === 'true') {
+    return <Nav />
   }
-  return <></>;
+  return <></>
 }
 
 function Nav() {
@@ -46,17 +46,17 @@ function Nav() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigations.main.map((item) =>
-            item.type === "link" ? (
+            item.type === 'link' ? (
               <Link
                 key={item.name}
                 url={item.link}
                 name={item.name}
                 klass="text-sm font-semibold leading-6 text-gray-500 hover:text-gray-900"
               />
-            ) : item.type === "simple" ? (
+            ) : item.type === 'simple' ? (
               <Simple key={item.name} items={item.sub} name={item.name} />
             ) : (
-              ""
+              ''
             )
           )}
         </div>
@@ -90,7 +90,7 @@ function Nav() {
                   <a
                     key={item.name}
                     href={item.link}
-                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     {item.name}
                   </a>

@@ -1,13 +1,13 @@
 const links = [
   {
-    name: "Social Media",
+    name: 'Social Media',
     links: [
       {
-        name: "Twitter",
-        handle: "@Chiefpansancolt",
-        color: "bg-[#1DA1F2]",
-        href: "https://twitter.com/chiefpansancolt",
-        img: "",
+        name: 'Twitter',
+        handle: '@Chiefpansancolt',
+        color: 'bg-[#1DA1F2]',
+        href: 'https://twitter.com/chiefpansancolt',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -15,11 +15,11 @@ const links = [
         ),
       },
       {
-        name: "Instagram",
-        handle: "@Chiefpansancolt",
-        color: "bg-[#E4405F]",
-        href: "https://instagram.com/chiefpansancolt",
-        img: "",
+        name: 'Instagram',
+        handle: '@Chiefpansancolt',
+        color: 'bg-[#E4405F]',
+        href: 'https://instagram.com/chiefpansancolt',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -31,11 +31,11 @@ const links = [
         ),
       },
       {
-        name: "Facebook",
-        handle: "@Chiefpansancolt",
-        color: "bg-[#005FED]",
-        href: "https://facebook.com/chiefpansancolt",
-        img: "",
+        name: 'Facebook',
+        handle: '@Chiefpansancolt',
+        color: 'bg-[#005FED]',
+        href: 'https://facebook.com/chiefpansancolt',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -47,11 +47,11 @@ const links = [
         ),
       },
       {
-        name: "TikTok",
-        handle: "@Chiefpansancolt",
-        color: "bg-black",
-        href: "https://tiktok.com/@chiefpansancolt",
-        img: "",
+        name: 'TikTok',
+        handle: '@Chiefpansancolt',
+        color: 'bg-black',
+        href: 'https://tiktok.com/@chiefpansancolt',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
@@ -61,14 +61,14 @@ const links = [
     ],
   },
   {
-    name: "Media",
+    name: 'Media',
     links: [
       {
-        name: "YouTube",
-        handle: "Chiefpansancolt",
-        color: "bg-[#FF0000]",
-        href: "https://youtube.com/channel/UCDiSj1nIsOnMHo3IASiN-3w",
-        img: "",
+        name: 'YouTube',
+        handle: 'Chiefpansancolt',
+        color: 'bg-[#FF0000]',
+        href: 'https://youtube.com/channel/UCDiSj1nIsOnMHo3IASiN-3w',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
@@ -76,11 +76,11 @@ const links = [
         ),
       },
       {
-        name: "YouTubeShort",
-        handle: "Chiefpansancolt Shorts",
-        color: "bg-[#FF0000]",
-        href: "https://youtube.com/channel/UCqHORCP5Eq7SpsyLKE-V2Zg",
-        img: "",
+        name: 'YouTubeShort',
+        handle: 'Chiefpansancolt Shorts',
+        color: 'bg-[#FF0000]',
+        href: 'https://youtube.com/channel/UCqHORCP5Eq7SpsyLKE-V2Zg',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
@@ -88,11 +88,11 @@ const links = [
         ),
       },
       {
-        name: "Twitch",
-        handle: "Chiefpansancolt",
-        color: "bg-[#9146FF]",
-        href: "https://twitch.tv/chiefpansancolt",
-        img: "",
+        name: 'Twitch',
+        handle: 'Chiefpansancolt',
+        color: 'bg-[#9146FF]',
+        href: 'https://twitch.tv/chiefpansancolt',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
@@ -102,14 +102,14 @@ const links = [
     ],
   },
   {
-    name: "Development",
+    name: 'Development',
     links: [
       {
-        name: "GitHub",
-        handle: "Chiefpansancolt",
-        color: "bg-[#181717]",
-        href: "https://youtube.com/channel/UCDiSj1nIsOnMHo3IASiN-3w",
-        img: "",
+        name: 'GitHub',
+        handle: 'Chiefpansancolt',
+        color: 'bg-[#181717]',
+        href: 'https://youtube.com/channel/UCDiSj1nIsOnMHo3IASiN-3w',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
@@ -119,14 +119,14 @@ const links = [
     ],
   },
   {
-    name: "Community",
+    name: 'Community',
     links: [
       {
-        name: "Discord",
-        handle: "chiefpansancolt#4352",
-        color: "bg-[#5865F2]",
-        href: "https://discord.gg/fzXW3rW",
-        img: "",
+        name: 'Discord',
+        handle: 'chiefpansancolt#4352',
+        color: 'bg-[#5865F2]',
+        href: 'https://discord.gg/fzXW3rW',
+        img: '',
         icon: (props) => (
           <svg fill="none" viewBox="0 0 71 55" {...props}>
             <g clipPath="url(#clip0)">
@@ -146,14 +146,14 @@ const links = [
     ],
   },
   {
-    name: "Publication Sites",
+    name: 'Publication Sites',
     links: [
       {
-        name: "Dev.to",
-        handle: "Chiefpansancolt",
-        color: "bg-[#181717]",
-        href: "https://dev.to/chiefpansancolt",
-        img: "",
+        name: 'Dev.to',
+        handle: 'Chiefpansancolt',
+        color: 'bg-[#181717]',
+        href: 'https://dev.to/chiefpansancolt',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z" />
@@ -161,11 +161,11 @@ const links = [
         ),
       },
       {
-        name: "Medium",
-        handle: "@chiefpansancolt",
-        color: "bg-[#12100E]",
-        href: "https://medium.com/@chiefpansancolt",
-        img: "",
+        name: 'Medium',
+        handle: '@chiefpansancolt',
+        color: 'bg-[#12100E]',
+        href: 'https://medium.com/@chiefpansancolt',
+        img: '',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path d="M0 0v24h24V0H0zm19.938 5.686L18.651 6.92a.376.376 0 0 0-.143.362v9.067a.376.376 0 0 0 .143.361l1.257 1.234v.271h-6.322v-.27l1.302-1.265c.128-.128.128-.165.128-.36V8.99l-3.62 9.195h-.49L6.69 8.99v6.163a.85.85 0 0 0 .233.707l1.694 2.054v.271H3.815v-.27L5.51 15.86a.82.82 0 0 0 .218-.707V8.027a.624.624 0 0 0-.203-.527L4.019 5.686v-.27h4.674l3.613 7.923 3.176-7.924h4.456v.271z" />
@@ -175,14 +175,14 @@ const links = [
     ],
   },
   {
-    name: "Merch Sites",
+    name: 'Merch Sites',
     links: [
       {
-        name: "Stream Elements",
-        handle: "Chiefpansancolt",
-        color: "bg-[#181717]",
-        href: "https://merch.streamelements.com/chiefpansancolt",
-        img: "/img/other/streamelements.png",
+        name: 'Stream Elements',
+        handle: 'Chiefpansancolt',
+        color: 'bg-[#181717]',
+        href: 'https://merch.streamelements.com/chiefpansancolt',
+        img: '/img/other/streamelements.png',
         icon: (props) => <></>,
       },
     ],

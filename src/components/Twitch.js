@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef } from "react"
-import { TwitchEmbed } from "react-twitch-embed"
+import { useRef } from 'react'
+import { TwitchEmbed } from 'react-twitch-embed'
 
 export default function Twitch() {
   const embed = useRef()
