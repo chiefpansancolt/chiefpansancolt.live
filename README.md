@@ -2,7 +2,6 @@
   <a href="https://chiefpansancolt.live" target="_blank">chiefpansancolt.live</a>
 </h1>
 
-[![GitHub Workflow Deploy Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chiefpansancolt.live/deploy.yml?label=Deploy&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/deploy.yml)
 [![GitHub Workflow Build Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chiefpansancolt.live/build.yml?label=Build&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/build.yml)
 [![GitHub Workflow Lint Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chiefpansancolt.live/lints.yml?label=Lints&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/lints.yml)
 [![CodeQL](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/chiefpansancolt/chiefpansancolt.live/actions/workflows/github-code-scanning/codeql)
@@ -14,8 +13,8 @@
 ### JavaScript
 
 <p>
-  <img src="https://img.shields.io/badge/node-18.x.x-blue.svg" />
-  <img src="https://img.shields.io/badge/yarn-1.22.x-blue.svg" />
+  <img src="https://img.shields.io/badge/node-21.x.x-blue.svg" />
+  <img src="https://img.shields.io/badge/pnpm-8.10.x-blue.svg" />
 </p>
 
 ## Author
