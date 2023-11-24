@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages */
 import Link from "@/components/navigation/Link"
 import Simple from "@/components/navigation/Simple"
@@ -5,8 +7,18 @@ import navigations from "@/data/navigation"
 import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useState } from "react"
+import { usePathname } from 'next/navigation'
 
-export default function Navigation() {
+export default function Navigation({ active }) {
+  const pathname = usePathname()
+
+  if (pathname !== '/' || active === "true") {
+    return <Nav />;
+  }
+  return <></>;
+}
+
+function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (

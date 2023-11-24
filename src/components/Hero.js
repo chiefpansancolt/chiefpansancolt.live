@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="bg-gray-100">
       <div className="relative overflow-hidden">
         <div className="relative pb-16">
-          <Navigation />
+          <Navigation active="true"/>
 
           <div className="mx-auto mt-16 max-w-7xl px-4 sm:px-6">
             <div className="text-center">

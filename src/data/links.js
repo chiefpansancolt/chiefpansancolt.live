@@ -76,7 +76,7 @@ const links = [
         ),
       },
       {
-        name: "YouTube",
+        name: "YouTubeShort",
         handle: "Chiefpansancolt Shorts",
         color: "bg-[#FF0000]",
         href: "https://youtube.com/channel/UCqHORCP5Eq7SpsyLKE-V2Zg",
