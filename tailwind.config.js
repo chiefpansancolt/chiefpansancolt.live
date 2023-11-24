@@ -2,7 +2,7 @@ module.exports = {
   content: [
     "./src/components/**/*.{js,jsx}",
     "./src/data/**/*.{js,jsx}",
-    "./src/pages/**/*.{js,jsx}",
+    "./src/app/**/*.{js,jsx}",
   ],
   theme: {
     extend: {},
@@ -11,6 +11,5 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/line-clamp"),
   ],
 }
